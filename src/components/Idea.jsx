@@ -19,7 +19,7 @@ class Idea extends Component {
   render () {
 
     return(
-      
+      <center>
       <div className="tile">
         <span className="deleteButton" onClick={this.handleDelete}>x</span>
         <h4 onClick={this.handleClick}>{this.props.idea.title}</h4>
@@ -28,7 +28,7 @@ class Idea extends Component {
           dangerouslySetInnerHTML={this.getRawMarkup()}
         ></p>
       </div>
-
+      </center>
     )
   }
 }

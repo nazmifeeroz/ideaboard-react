@@ -52,18 +52,19 @@ class IdeaForm extends Component {
   render() {
 
     return(
-
+      <center>
       <div className="tile">
 
         <form onBlur={this.handleBlur} >
 
-          <input className="input" type="text" name="title" placeholder="Enter a title" value={this.state.title} onChange={this.handleInput} ref={this.props.titleRef} />
+          <input className="input" type="text" name="title" placeholder="Note title" value={this.state.title} onChange={this.handleInput} ref={this.props.titleRef} />
           
-          <textarea className="input" name="body" placeholder="Describe your idea" value={this.state.body} onChange={this.handleInput} ></textarea>
+          <textarea className="input" name="body" placeholder="Note body" value={this.state.body} onChange={this.handleInput} ></textarea>
 
         </form>
 
       </div>
+      </center>
 
     )
 

@@ -112,9 +112,9 @@ class IdeasContainer extends Component {
 
       <div>
 
-        <button className="newIdeaButton" onClick={this.addNewIdea} >New Idea</button>
+        <button className="newIdeaButton" onClick={this.addNewIdea} >New Note</button>
 
-        <span className="notification">{this.state.notification}</span>
+        <div className="alert alert-success">{this.state.notification}</div>
 
         <div className="App-intro">
 
